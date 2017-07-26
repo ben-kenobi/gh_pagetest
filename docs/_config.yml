@@ -13,22 +13,38 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Your awesome title
-email: your-email@example.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+title: Gh_pagetest
+description: a test site for learning jekyll
+
+url: https://github.com/ben-kenobi/gh_pagetest
+baseurl: ""
+paginate_path: "blog/page:num/"
+permalink: blog/:title/
 
 # Build settings
 markdown: kramdown
-theme: minima
+highlighter: rouge
+gems: [jekyll-paginate]
+paginate: 5
 plugins_dir:
   - jekyll-feed
+
+
+social:
+ github: ben-kenobi
+ facebook: Bruce Mathers
+ email: whatelsecani@gmail.com
+
+# google_analytics: "google_analytics_key"
+
+navigation:
+ - title: Home
+   url: /index.html
+ - title: About
+   url: /about
+ - title: Contact
+   url: /contact
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
@@ -43,10 +59,10 @@ plugins_dir:
 #   - vendor/ruby/
 
 defaults:
--
-scope:
-path: "" # an empty string here means all files in the project
-type: "posts"
-values:
-layout: "default"
-excerpt_separator: <!--more-->
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "posts" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "default"
+      excerpt_separator: <!--more-->

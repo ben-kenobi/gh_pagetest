@@ -29,6 +29,7 @@ paginate: 5
 plugins_dir:
   - jekyll-feed
 
+gitrepo: gh_pagetest
 
 social:
  github: ben-kenobi

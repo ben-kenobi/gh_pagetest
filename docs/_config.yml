@@ -26,8 +26,8 @@ github_username:  jekyll
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-cayman
-plugins:
+theme: minima
+plugins_dir:
   - jekyll-feed
 
 # Exclude from processing.
@@ -49,3 +49,4 @@ path: "" # an empty string here means all files in the project
 type: "posts"
 values:
 layout: "default"
+excerpt_separator: <!--more-->

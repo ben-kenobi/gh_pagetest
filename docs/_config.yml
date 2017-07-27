@@ -36,7 +36,7 @@ social:
  facebook: Bruce Mathers
  email: whatelsecani@gmail.com
 
-# google_analytics: "google_analytics_key"
+google_analytics: "UA-103425024-1"
 
 navigation:
  - title: Home

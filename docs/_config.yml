@@ -18,6 +18,8 @@ description: a test site for learning jekyll
 
 url: https://github.com/ben-kenobi/gh_pagetest
 baseurl: "/gh_pagetest"
+#baseurl: ""
+
 paginate_path: "blog/page:num/"
 permalink: blog/:title/
 
